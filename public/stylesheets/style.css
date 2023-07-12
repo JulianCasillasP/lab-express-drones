@@ -1,68 +1,94 @@
 body {
   padding: 50px;
   font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00b7ff;
+  background-color: #a392c4;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 400px;
   margin: 0 auto;
-}
-
-h1 {
-  margin-bottom: 20px;
-}
-
-.drones-list {
-  margin-bottom: 40px;
-}
-
-.drones-list .drone-card {
-  border: 1px solid #ccc;
   padding: 20px;
-  margin-bottom: 20px;
-}
-
-.drones-list .drone-card h3 {
-  margin-bottom: 10px;
-}
-
-.drones-list .drone-card p {
-  margin-bottom: 5px;
-}
-
-.form-container {
-  margin-bottom: 40px;
-}
-
-.form-container form {
+  background-color: #fff;
   border: 1px solid #ccc;
-  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.form-container label {
-  display: block;
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #260569d8;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  border-radius: 4px;
+  border: 2px solid #260569d8;
   margin-bottom: 10px;
 }
 
-.form-container input[type="text"],
-.form-container input[type="number"] {
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 10px;
-}
-
-.form-container button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+button {
+  background-color: #260569d8;
+  padding: 8px 15px;
+  color: white;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.error-message {
-  color: red;
+.drones-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
 }
+
+.drones-item {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.drones-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: 2c1064d8;
+}
+
+.drones-item p {
+  margin: 0;
+  color: #333;
+}
+
+.drones-item a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: 2c1064d8;
+  transition: color 0.3s ease;
+}
+
+.drones-item form {
+  margin-top: 10px;
+}
+
+.drones-item button {
+  padding: 8px 15px;
+  background-color: #260569d8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.drones-item button:hover {
+  background-color: #2c1064d8;
+}
+
